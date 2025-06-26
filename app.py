@@ -5,7 +5,7 @@ class App:
         self.name = "Epic CLI"
         self.version = "0.0.1"
         self.description = "EPIC CLI is a command line interface for file collection"
-        self.arg_handler = ArgsHandler(version=self.version)
+        self.arg_handler = ArgsHandler(description=self.description, version=self.version)
 
     def run(self):
         self.args = self.arg_handler.parse_args()
